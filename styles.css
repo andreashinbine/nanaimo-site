@@ -1,0 +1,88 @@
+/*Style sheet for all */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Lato:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    background-color: #002147; /* Deep Navy Blue */
+    font-family: 'Lato', sans-serif;
+    color: #F5FEFD; /* Sea Salt White */
+}
+/* Menu*/
+.nanaimo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #001a38; /* Darker Navy */
+}
+
+.nav-logo {
+    font-family: 'Staatliches', sans-serif;
+    color: #FFBF00; /* Pale Amber */
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #F5FEFD;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* Main body */
+.nanaimo {
+    padding: 40px 10% 80px 10%;
+    border-left: 10px solid #A67D3D; /* Arbutus Copper */
+    margin: 40px;
+}
+/* Update this selector to match your HTML */
+body.savethedatespage {
+    background: linear-gradient(rgba(0, 33, 71, 0.85), rgba(0, 33, 71, 0.85)), 
+                url('calender.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    font-family: 'Staatliches', sans-serif;
+    color: #FFBF00;
+    font-size: 3rem;
+}
+
+/*Buttons */
+.btn-sunset {
+    background-color: #FFBF00;
+    color: #002147;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+/*Footer*/
+footer {
+    background-color: #001a38;
+    padding: 60px 10% 30px 10%;
+    border-top: 5px solid #A67D3D;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
