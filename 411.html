@@ -2,12 +2,233 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Under Construction - Nanaimo: Beyond The Bar</title>
-    <link rel="stylesheet" href="style.css"> 
+    <title>Nanaimo: The 411</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Lato:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lato', sans-serif;
+            color: white;
+            background-color: #001a38; 
+        }
+
+        /* Main Styles */
+        .nanaimo {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        /* Headers */
+        h1, h2, h3 {
+            font-family: 'Staatliches', sans-serif;
+            letter-spacing: 2px;
+            color: #FFBF00; /* Sunset Gold */
+        }
+
+        h1 { font-size: 3rem; margin-bottom: 10px; }
+        h2 { font-size: 2rem; margin-top: 40px; }
+
+        /* Reusing the table style for "Fast Facts" */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #001a38;
+        }
+
+        .info-table th, .info-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(245, 254, 253, 0.1);
+        }
+
+        .info-table th {
+            color: #FFBF00;
+            text-transform: uppercase;
+            font-family: 'Staatliches', sans-serif;
+            letter-spacing: 1px;
+            width: 30%;
+        }
+
+        /* Navigation */
+        .nanaimo-nav { 
+            background: #000e20; 
+            padding: 1rem 2rem; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-family: 'Staatliches', sans-serif;
+            font-size: 1.5rem;
+            color: #FFBF00;
+        }
+
+        .nav-links a { 
+            color: white; 
+            text-decoration: none; 
+            margin-left: 15px; 
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #FFBF00;
+        }
+
+        /* Footer */
+        footer { 
+            background: #000e20; 
+            padding: 40px 20px; 
+            margin-top: 50px; 
+            text-align: center; 
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        /* Buttons */
+        .btn-sunset { 
+            display: inline-block; 
+            margin-top: 20px; 
+            color: #FFBF00; 
+            text-decoration: none; 
+            border: 1px solid #FFBF00; 
+            padding: 10px 20px; 
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .btn-sunset:hover {
+            background: #FFBF00;
+            color: #001a38;
+        }
+
+        /* Section specific styles */
+        .info-block {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
-<body style="text-align: center; padding: 100px;">
-    <h1>🚧 Page Under Construction 🚧</h1>
-    <p>I'm currently out exploring Nanaimo to bring you the best content. Check back soon!</p>
-    <a href="beyondthebar.html" style="color: #FFBF00;">Return to Home</a>
+<body class="the411page">
+
+    <!-- Navigation -->
+    <nav class="nanaimo-nav">
+        <div class="nav-logo">Nanaimo: Beyond The Bar</div>
+        <div class="nav-links">
+            <a href="beyondthebar.html">Home</a>
+            <a href="savethedates.html">Save The Dates</a>
+            <a href="411.html" style="color: #FFBF00;">The 411</a>
+            <a href="inthebeginning.html">In The Beginning</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="nanaimo">
+        <h1>The 411</h1>
+        <p class="info-block">
+            New to the Harbour City? Whether you are just visiting for the weekend or planning to put down roots, here are the essential facts, figures, and logistics you need to navigate Nanaimo.
+        </p>
+
+        <!-- Section 1: Fast Facts -->
+        <h2>Fast Facts</h2>
+        <table class="info-table">
+            <tbody>
+                <tr>
+                    <th>Population</th>
+                    <td>Approx. 100,000 (Central Nanaimo)</td>
+                </tr>
+                <tr>
+                    <th>Nickname</th>
+                    <td>The Harbour City</td>
+                </tr>
+                <tr>
+                    <th>Known For</th>
+                    <td>Nanaimo Bars, Bathtub Racing, The Bastion</td>
+                </tr>
+                <tr>
+                    <th>Climate</th>
+                    <td>Mediterranean (Dry summers, mild wet winters)</td>
+                </tr>
+                <tr>
+                    <th>Ferry Terminals</th>
+                    <td>Departure Bay (to Horseshoe Bay) & Duke Point (to Tsawwassen)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Section 2: Getting Around -->
+        <h2>Getting Around</h2>
+        <div class="info-block">
+            <p><strong>BC Ferries:</strong> The lifeline of the island. Reservations are highly recommended for weekends and holidays. Foot passengers can travel easily between Departure Bay and Horseshoe Bay.</p>
+            <p><strong>Seaplanes:</strong> Harbour Air and Seair offer 20-minute flights from downtown Nanaimo directly to downtown Vancouver.</p>
+            <p><strong>Transit:</strong> The RDN Transit system services the entire region, including connectors to Parksville and Qualicum Beach.</p>
+        </div>
+
+        <!-- Section 3: Emergency & Utility -->
+        <h2>Important Contacts</h2>
+        <table class="info-table">
+            <tbody>
+                <tr>
+                    <th>Emergency</th>
+                    <td>9-1-1</td>
+                </tr>
+                <tr>
+                    <th>Non-Emergency Police</th>
+                    <td>250-754-2345</td>
+                </tr>
+                <tr>
+                    <th>Nanaimo Hospital</th>
+                    <td>250-755-7691 (1200 Dufferin Crescent)</td>
+                </tr>
+                <tr>
+                    <th>City Hall</th>
+                    <td>250-754-4251</td>
+                </tr>
+		<tr>
+		    <th>Nanaimo FireHall</th>
+		    <td>666 Fitzwilliam St · (250) 753-7311</td>
+		    <td>6230 Hammond Bay Rd</td>
+		    <td>3269 Jingle Pot Rd · (250) 585-2931</td>
+		    <td>1425 Cranberry Ave · (250) 753-7311</td>
+		    <td>26 Pirates Ln · (250) 753-7311</td>
+		</tr>
+		<tr>
+		   <th>Police Department</th>
+		   <td> 303 Prideaux St · (250) 754-2345</td>
+		   <td>1830 Cedar Rd #1D · (250) 722-3486</td>
+		</tr>
+           </tbody>
+        </table>
+
+
+        <a href="savethedates.html" class="btn-sunset">Check Upcoming Events</a>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>Nanaimo: Beyond The Bar</h3>
+                <p>Your unofficial guide to the Harbour city.</p>
+            </div>
+            <div>
+                <h3>Territory Acknowledgement</h3>
+                <p>Located on the traditional territory of the Snuneymuxw First Nation.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
