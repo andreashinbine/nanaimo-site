@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nanaimo: Beyond The Bar</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&family=Lato:wght@400;700&display=swap');
+
+        /* Entire Site Styles */
+        body {
+            margin: 0;
+            background-color: #002147; /* Deep Navy Blue */
+            font-family: 'Lato', sans-serif;
+            color: #F5FEFD; /* Sea Salt White */
+        }
+
+        /* Navigation Bar */
+        .nanaimo-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background-color: #001a38; /* Slightly darker navy for the nav */
+        }
+
+        .nav-logo {
+            font-family: 'Staatliches', sans-serif;
+            color: #FFBF00; /* Pale Amber */
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #F5FEFD;
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a:hover {
+            color: #A67D3D;
+        }
+
+        /* Main Content Container */
+        .nanaimo {
+            padding: 40px 10% 80px 10%;
+            border-left: 10px solid #A67D3D; /* Arbutus Copper */
+            margin: 40px;
+        }
+
+        /* Hero Image Styling */
+        .welcome-image {
+            width: 100%;
+            max-height: 450px;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 2px solid rgba(245, 254, 253, 0.2);
+        }
+
+        .welcome-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-family: 'Staatliches', sans-serif;
+            color: #FFBF00;
+            font-size: 2.8rem;
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* Button */
+        .btn-sunset {
+            background-color: #FFBF00;
+            color: #002147; /* Navy text on amber button */
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: 0.3s ease;
+        }
+
+        .btn-sunset:hover {
+            background-color: #A67D3D;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #001a38;
+            padding: 60px 10%;
+            border-top: 5px solid #A67D3D;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        footer h3 {
+            color: #FFBF00;
+            font-family: 'Staatliches', sans-serif;
+            margin-top: 0;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li a {
+            color: #F5FEFD;
+            text-decoration: none;
+            line-height: 2;
+            opacity: 0.8;
+        }
+
+        footer ul li a:hover {
+            opacity: 1;
+            color: #A67D3D;
+        }
+
+        .copyright {
+            margin-top: 40px;
+            font-size: 0.85rem;
+            opacity: 0.6;
+            border-top: 1px solid rgba(245, 254, 253, 0.1);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>  
+
+    <nav class="nanaimo-nav">
+        <div class="nav-logo">Nanaimo: Beyond The Bar</div>
+        <div class="nav-links">
+            <a href="savethedates.html">Save The Dates</a>
+            <a href="411.html">The 411</a>
+            <a href="inthebeginning.html">In The Beginning</a> 
+        </div>
+    </nav>
+
+    <div class="nanaimo">
+        <div class="welcome-image">
+            <img src="images/welcome.jpg" alt="Welcome to Nanaimo British Columbia">
+        </div>
+
+        <h1>Stay a while, look around... everything except the recipe!</h1>
+        <p>If you like your air salty, your hills steep, and your deer strangely comfortable in your front yard, welcome home. Nanaimo is a place where 'Going to the Island' doesn’t make sense (because you’re already on it) and where a 'traffic jam' usually involves a family of geese at Maffeo Sutton Park.</p>
+        
+        <a href="savethedates.html" class="btn-sunset">Hop in the tub over to Save The Dates</a>
+   <div class="photo-grid">
+    <div class="photo-item">
+        <img src="images/pretty.jpg" alt="Nanaimo Sunset Mountains">
+    </div>
+    <div class="photo-item">
+        <img src="images/boats.jpg" alt="Nanaimo Harbour Boats">
+    </div>
+</div>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>Nanaimo: Beyond The Bar</h3>
+                <p>Your unofficial guide to the Harbour City. Located on Vancouver Island in British Columbia, Canada.</p>
+            </div>
+            
+            <div>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="savethedates.html">Save The Dates</a></li>
+                    <li><a href="411.html">The 411</a></li>
+                    <li><a href="inthebeginning.html">In The Beginning</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Territory Acknowledgment</h3>
+                <p>Located on the traditional territory of the Snuneymuxw First Nation.<br> 2025 Nanaimo: Beyond The Bar | Made with love (and sugar) in the Hub City.</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
